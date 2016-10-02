@@ -5,7 +5,7 @@ import sys
 import argparse
 from python_scripts.Utils import fileUtils
 
-class ConfigParser:
+class MyConfigParser:
 	file_utils = fileUtils.FileUtils()
 
 	def parse_custom(self, file_path):
@@ -42,7 +42,7 @@ class ConfigParser:
 
 
 if __name__ == "__main__":
-	config_parser = ConfigParser()
+	config_parser = MyConfigParser()
 
 	desc = ('Utility class that provides configuration file parsing.\n'
 			'  + parse_custom(file_path)\n'

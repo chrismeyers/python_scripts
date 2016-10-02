@@ -2,7 +2,7 @@
 
 import os
 import sys
-from python_scripts.Utils import configParser
+from python_scripts.Utils import myConfigParser
 from python_scripts.Utils import fileUtils
 
 def perform_backup():
@@ -15,7 +15,7 @@ def perform_backup():
 
 if __name__ == "__main__":
 	file_utils = fileUtils.FileUtils()
-	config_parser = configParser.ConfigParser()
+	config_parser = myConfigParser.MyConfigParser()
 
 	dir_location = "."
 	dir_name = ".config"
