@@ -3,6 +3,7 @@
 import os
 import sys
 import argparse
+import filecmp
 from python_scripts.Utils import myConfigParser
 from python_scripts.Utils import fileUtils
 
@@ -10,10 +11,13 @@ def perform_backup():
 	# Copies files to ../Dropbox/misc/dotfiles/...
 	file_num = 1
 	for file in backup_data:
-		os.system("cp " + backup_data[file][0] + "/" + file + " " + backup_data[file][1])
-		print(str(file_num).rjust(3) + "  Copied: " + file + " to " + backup_data[file][1])
+		orig_file = backup_data[file][0] + "/" + file
+		backup_file = backup_data[file][1] + "/" + file
+		if not filecmp.cmp(orig_file.replace("'", ""), backup_file.replace("'", "")):
+			os.system("cp " + backup_data[file][0] + "/" + file + " " + backup_data[file][1])
+			print(str(file_num).rjust(3) + "  Copied: " + file + " to " + backup_data[file][1])
 
-		file_num += 1
+			file_num += 1
 
 
 def perform_restore():
@@ -24,7 +28,7 @@ def perform_restore():
 		orig_file = backup_data[file][0] + "/" + file
 		backup_file = backup_data[file][1] + "/" + file
 
-		if os.path.exists(modify_path_for_existance_check(orig_file)):
+		if os.path.exists(orig_file.replace("'", "")):
 			os.system("mv " + orig_file + " " + orig_file + backup_ext)
 
 		os.system("cp " + backup_file + " " + orig_file)
@@ -39,7 +43,7 @@ def perform_cleanup():
 	for file in backup_data:
 		current_file = handle_files_with_spaces(backup_data[file][0] + "/" + file)
 
-		if os.path.exists(modify_path_for_existance_check(current_file)):
+		if os.path.exists(current_file.replace("'", "")):
 			os.system("rm -f " + current_file)
 			print(str(file_num).rjust(3) + "  Removed: " + current_file)
 
@@ -51,10 +55,6 @@ def handle_files_with_spaces(file_name):
 		return file_name[:-1] + backup_ext + "'"
 	else:
 		return file_name + backup_ext
-
-
-def modify_path_for_existance_check(file_name):
-	return file_name.replace("'", "")
 
 
 if __name__ == "__main__":
