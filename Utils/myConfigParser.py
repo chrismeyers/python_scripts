@@ -2,6 +2,7 @@
 
 import os
 import sys
+import json
 import argparse
 from python_scripts.Utils import fileUtils
 
@@ -23,7 +24,10 @@ class MyConfigParser:
 
 
 	def parse_json(self, file_path):
-		pass
+		with open(file_path) as f:
+			data = json.load(f)
+
+		return data
 
 
 	def make_config_dir(self, location, name):
@@ -46,20 +50,35 @@ if __name__ == "__main__":
 
 	desc = ('Utility class that provides configuration file parsing.\n'
 			'  + parse_custom(file_path)\n'
-			'    - Parses a custom configuration file format\n'
+			'    - Parses a custom configuration file format.\n'
 			'      -- valid format: [key] [value1] [value2]\n'
 			'    - Returns a map of parsed elements.\n'
+			'  + parse_json(file_path)\n'
+			'    - Parsed a json configuration file format\n'
+			'    - Returns a map of parsed elements.\n'
 			'  + make_config_dir(location, name)\n'
-			'    - Creates a config directory named "name" at location "location"\n'
+			'    - Creates a config directory named "name" at location "location".\n'
 			'  + make_config_file(location, name)\n'
-			'    - Crreates a config file named "name" at location "location"')
+			'    - Crreates a config file named "name" at location "location".')
 	arg_parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawTextHelpFormatter)
 	arg_parser.parse_args()
 
 	config_parser.make_config_dir(".", ".config")
-	custom = config_parser.parse_custom("./.config/config.custom")
-	print(custom)
-	for key in custom:
-		print(key)
-		for value in custom[key]:
-			print("  " + value)
+	
+	print("\n" + 80 * "=" + "\n")
+
+	custom_data = config_parser.parse_custom("./.config/config.custom")
+	print(custom_data)
+	for custom_key in custom_data:
+		print(custom_key)
+		for custom_value in custom_data[custom_key]:
+			print("  " + custom_value)
+
+	print("\n" + 80 * "=" + "\n")
+	
+	json_data = config_parser.parse_json("./.config/config.json")
+	print(json_data)
+	for json_key in json_data:
+		print(json_key)
+		for json_value in json_data[json_key]:
+			print("  " + json_value)
