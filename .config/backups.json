@@ -1,0 +1,19 @@
+{
+	".aliases": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
+	".bashrc": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
+	".vimrc": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
+	".bash_profile": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
+	
+	"'Package Control.sublime-settings'": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
+	"Preferences.sublime-settings": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
+	"Python3.sublime-build": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
+	
+	"httpd-vhosts.conf": ["/Applications/MAMP/conf/apache/extra", "/Users/chris/Dropbox/misc/dotfiles/HostFiles"],
+	"hosts": ["/etc", "/Users/chris/Dropbox/misc/dotfiles/HostFiles"],
+	
+	"com.googlecode.iterm2.plist": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
+	"iterm2_default.itermcolors": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
+	
+	".gitconfig": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Git"],
+	".gitignore_global": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Git"]
+}

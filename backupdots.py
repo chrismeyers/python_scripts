@@ -61,10 +61,9 @@ if __name__ == "__main__":
 	file_utils = fileUtils.FileUtils()
 	config_parser = myConfigParser.MyConfigParser()
 
-	dir_location = "."
+	dir_location = "/Users/chris/Documents/Development/python-dev/python_scripts"
 	dir_name = ".config"
-	file_name = "backups.config"
-
+	file_name = "backups.json"
 	backup_ext = ".backupsav"
 
 	arg_parser = argparse.ArgumentParser(description='Backup or restore configuration files.')
@@ -79,7 +78,7 @@ if __name__ == "__main__":
 		config_parser.make_config_dir(dir_location, dir_name)
 		config_parser.make_config_file(file_utils.sanitized_path(dir_location, dir_name), file_name)
 
-	backup_data = config_parser.parse_custom(full_path)
+	backup_data = config_parser.parse_json(full_path)
 
 	if args.backup:
 		perform_backup()
