@@ -14,6 +14,6 @@
 	"com.googlecode.iterm2.plist": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
 	"iterm2_default.itermcolors": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
 	
-	".gitconfig": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Git"],
-	".gitignore_global": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Git"]
+	".gitconfig": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Git/Mac"],
+	".gitignore_global": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Git/Mac"]
 }
