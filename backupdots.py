@@ -67,8 +67,8 @@ if __name__ == "__main__":
 	backup_ext = ".backupsav"
 
 	arg_parser = argparse.ArgumentParser(description='Backup or restore configuration files.')
-	arg_parser.add_argument('-b', '--backup', help='perform a backup based on files in ./.config/backups.config', action='store_true')
-	arg_parser.add_argument('-r', '--restore', help='perform a restore based on files in ./.config/backups.config', action='store_true')
+	arg_parser.add_argument('-b', '--backup', help='perform a backup based on files in ./.config/backups.json', action='store_true')
+	arg_parser.add_argument('-r', '--restore', help='perform a restore based on files in ./.config/backups.json', action='store_true')
 	arg_parser.add_argument('-c', '--cleanup', help='removes *' + backup_ext + ' files', action='store_true')
 	args = arg_parser.parse_args()
 	
