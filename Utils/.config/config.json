@@ -1,10 +1,10 @@
 {
-  "a": [
-    "description",
-    "test_name"
-  ],
-  "b": [
-    ".config",
-    "another_name"
-  ]
+    "a": [
+        "description",
+        "test_name"
+    ],
+    "b": [
+        ".config",
+        "another_name"
+    ]
 }
