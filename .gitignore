@@ -91,3 +91,6 @@ ENV/
 
 # Sublime project files
 *.sublime-*
+
+# Test files
+Test/
