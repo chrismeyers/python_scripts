@@ -7,6 +7,7 @@
     "'Package Control.sublime-settings'": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
     "Preferences.sublime-settings": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
     "Python3.sublime-build": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
+    "Python.sublime-settings": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
 
     "httpd-vhosts.conf": ["/Applications/MAMP/conf/apache/extra", "/Users/chris/Dropbox/misc/dotfiles/HostFiles"],
     "hosts": ["/etc", "/Users/chris/Dropbox/misc/dotfiles/HostFiles"],

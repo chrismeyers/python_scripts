@@ -13,7 +13,8 @@ def perform_backup():
     for file in backup_data:
         orig_file = backup_data[file][0] + "/" + file
         backup_file = backup_data[file][1] + "/" + file
-        if not filecmp.cmp(orig_file.replace("'", ""), backup_file.replace("'", "")):
+        if not os.path.exists(backup_file.replace("'", "")) or \
+           not filecmp.cmp(orig_file.replace("'", ""), backup_file.replace("'", "")):
             os.system("cp " + backup_data[file][0] + "/" + file + " " + backup_data[file][1])
             print(str(file_num).rjust(3) + "  Copied: " + file + " to " + backup_data[file][1])
             file_num += 1
