@@ -3,6 +3,7 @@
     ".bashrc": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
     ".vimrc": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
     ".bash_profile": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
+    ".astylerc": ["/Users/chris", "/Users/chris/Dropbox/misc/dotfiles/Dotfiles"],
 
     "'Package Control.sublime-settings'": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
     "Preferences.sublime-settings": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
