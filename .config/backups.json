@@ -10,8 +10,10 @@
     "Python3.sublime-build": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
     "Python.sublime-settings": ["/Users/chris/Library/'Application Support'/'Sublime Text 3'/Packages/User", "/Users/chris/Dropbox/misc/dotfiles/SublimeText/UserSettings"],
 
-    "httpd-vhosts.conf": ["/Applications/MAMP/conf/apache/extra", "/Users/chris/Dropbox/misc/dotfiles/HostFiles"],
     "hosts": ["/etc", "/Users/chris/Dropbox/misc/dotfiles/HostFiles"],
+    "httpd-vhosts.conf": ["/Applications/MAMP/conf/apache/extra", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/MAMP"],
+    "_localhost.conf": ["/usr/local/etc/apache2/2.4/vhosts", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/Homebrew/usr/local/etc/apache2/2.4/vhosts"],
+    "_chrismeyers.conf": ["/usr/local/etc/apache2/2.4/vhosts", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/Homebrew/usr/local/etc/apache2/2.4/vhosts"],
 
     "com.googlecode.iterm2.plist": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
     "iterm2_default.itermcolors": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
