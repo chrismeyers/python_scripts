@@ -12,8 +12,8 @@
 
     "hosts": ["/etc", "/Users/chris/Dropbox/misc/dotfiles/HostFiles"],
     "httpd-vhosts.conf": ["/Applications/MAMP/conf/apache/extra", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/MAMP"],
-    "_localhost.conf": ["/usr/local/etc/apache2/2.4/vhosts", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/Homebrew/usr/local/etc/apache2/2.4/vhosts"],
-    "_chrismeyers.conf": ["/usr/local/etc/apache2/2.4/vhosts", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/Homebrew/usr/local/etc/apache2/2.4/vhosts"],
+    "httpd-vhosts-homebrew.conf": ["/usr/local/etc/apache2/2.4/extra", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/Homebrew/usr/local/etc/apache2/2.4/extra"],
+    "httpd.conf": ["/usr/local/etc/apache2/2.4", "/Users/chris/Dropbox/misc/dotfiles/HostFiles/Homebrew/usr/local/etc/apache2/2.4"],
 
     "com.googlecode.iterm2.plist": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
     "iterm2_default.itermcolors": ["/Users/chris/Documents/TerminalProfiles/iTerm2/Default", "/Users/chris/Dropbox/misc/dotfiles/iTermProfiles/Default"],
